@@ -22,7 +22,7 @@ export default {
         alert("シェアする内容を入力してください");
       }else{
         axios
-         .post("morning-shelf-03038/api/shares",{
+         .post("https://morning-shelf-03038.herokuapp.com/api/shares",{
            user_id: this.$store.state.user.id,
            share: this.share,
          })

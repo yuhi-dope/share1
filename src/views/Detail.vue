@@ -60,7 +60,7 @@ export default {
     },
     comment(){
       axios
-        .get("morning-shelf-03038/api/shares" + this.id)
+        .get("https://morning-shelf-03038.herokuapp.com/api/shares" + this.id)
         .then((response)=>{
           console.log(response);
           this.data=response.data.comment;

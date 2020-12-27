@@ -32,7 +32,7 @@ export default {
   methods:{
     auth(){
       axios
-       .post("morning-shelf-03038/api/register",{
+       .post("https://morning-shelf-03038.herokuapp.com/api/register",{
          name: this.name,
          profile: this.profile,
          email: this.email,

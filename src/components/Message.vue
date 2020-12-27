@@ -54,7 +54,7 @@ export default {
         });
       }else{
         axios
-          .post("morning-shelf-03038/api/like",{
+          .post("https://morning-shelf-03038.herokuapp.com/api/like",{
             share_id:this.shares[index].item.id,
             user_id:this.$store.state.user.id,
           })

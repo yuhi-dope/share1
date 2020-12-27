@@ -38,7 +38,7 @@ export default {
     edit(){
       if(!this.active){
         axios
-          .put("morning-shelf-03038/api/user",{
+          .put("https://morning-shelf-03038.herokuapp.com/api/user",{
             email:this.$store.state.user.email,
             profile: this.profile,
           })
